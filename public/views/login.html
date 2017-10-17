@@ -1,0 +1,23 @@
+
+
+<div id="logrev" ng-init="formloginmodel=true" ng-model="formloginmodel" ng-show="formloginmodel"> 
+<form id="formlogin" >
+<div id="log">
+<label value="UserName">UserName</label>
+	<input type="text" ng-model="uname"placeholder="Enter The Username"></input></br>
+	<label value="Password">Password</label>
+	<input type="password" ng-model="password" placeholder="Password"></input></br>
+	<input type="submit" id="submit" ng-click="login()" ng-model="submitclick"/>
+	<span ng-init="creditionls=false" ng-model="creditionls" ng-if="creditionls">Please user Name and password correctly.........</span>
+</div>
+</form>
+</div>
+<div ng-init="Nodata=false" ng-model="Nodata" ng-if="Nodata">
+<loginnodata></loginnodata>
+</div>
+<div ng-init="Divelm=false" ng-model="Divelm" ng-if="Divelm">
+<testdirective></testdirective>
+</div>
+<div ng-init="succesreg=false" ng-model="succesreg" ng-if="succesreg">
+<successreg></successreg>
+</div>
